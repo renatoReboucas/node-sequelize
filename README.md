@@ -1,13 +1,13 @@
 # Sequileze
 
 ```
-instalar o sequileze:
+Instalar o sequileze:
 ```
 
 npm install sequelize sequelize-cli path
 
 ```
-depois disso rodar o comando:
+Depois disso rodar o comando:
 ```
 
 npx sequelize-cli init 
@@ -29,10 +29,16 @@ module.exports = {
 ~~~
 
 ```
-criando tabelas
+Criando tabelas
 ````
 
 * não precisa passar id pois ele cria sozinho
 
 npx sequelize-cli model:create --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
 
+
+````
+Rodando migrations:
+```
+
+npx sequelize-cli db:migrate
