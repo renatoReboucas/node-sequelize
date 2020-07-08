@@ -21,7 +21,7 @@ e colar o codigo a baixo nele:
 const path = require('path');
 
 module.exports = {
-  'config': path.resolve('config', 'config.json'),
+  'config': path.resolve('./caminho_nova_pasta/config', 'config.json'),
   'models-path': path.resolve('./caminho_nova_pasta/models'),
   'seeders-path': path.resolve('./caminho_nova_pasta/seeders'),
   'migrations-path': path.resolve('./caminho_nova_pasta/migrations')
