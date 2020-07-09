@@ -54,3 +54,21 @@ Rodando arquivos seeds:
 ```
 
 npx sequelize-cli db:seed:all
+
+```
+Desfazendo ultimo seed:
+```
+
+npx sequelize db:seed:undo
+
+```
+Para desfazer seeds de uma tabela específica:
+```
+npx sequelize-cli db:seed:undo --seed nome-do-arquivo
+
+
+```
+Para desfazer todos os seeds feitos:
+```
+
+npx sequelize-cli db:seed:undo:all
