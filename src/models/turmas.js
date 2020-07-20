@@ -10,7 +10,18 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      //fala pra onde vai a acociacao
+      Turmas.hasMany(models.Matriculas, {
+        foreignKey: 'turma_id'
+      })
+
+      //referencia na tabela que a acociacao vai ser criada
+      Turmas.belongsTo(Models.Pessoas, {
+        foreignKey: 'docente_id'
+      })
+      Turmas.belongsTo(Models.Niveis, {
+        foreignKey: 'nivel_id'
+      })
     }
   };
   Turmas.init({
