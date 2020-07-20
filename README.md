@@ -36,6 +36,12 @@ Criando tabelas
 
 npx sequelize-cli model:create --name Pessoas --attributes nome:string,ativo:boolean,email:string,role:string
 
+ou
+
+
+Só colocar atributos naturais da tabela
+
+npx sequelize-cli model:create --name Turmas  --attributes data_inicio:dateonly
 
 ```
 Rodando migrations:
