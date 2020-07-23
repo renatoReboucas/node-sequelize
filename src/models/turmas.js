@@ -16,10 +16,10 @@ module.exports = (sequelize, DataTypes) => {
       })
 
       //referencia na tabela que a acociacao vai ser criada
-      Turmas.belongsTo(Models.Pessoas, {
+      Turmas.belongsTo(models.Pessoas, {
         foreignKey: 'docente_id'
       })
-      Turmas.belongsTo(Models.Niveis, {
+      Turmas.belongsTo(models.Niveis, {
         foreignKey: 'nivel_id'
       })
     }
