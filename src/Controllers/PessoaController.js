@@ -95,7 +95,7 @@ class PessoasController{
 
   static async criaMatricula(req, res) {
     const { estudanteId } = req.params
-    const novaMatricula = { ...req.body, Estudante_id: Number(estudanteId) }
+    const novaMatricula = { ...req.body, estudante_id: Number(estudanteId) }
     try {
       // console.log(novaMatricula)
       const novaMatriculaCriada = await database.Matriculas.create(novaMatricula)
